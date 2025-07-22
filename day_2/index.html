@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn SE day 2 by RevoU</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <p class="text-3xl pb-4 text-blue-500 font-bold pl-6 pt-6 bg-black">Progress day 2 kelas SE</p>
+    <hr/>
+    <p>Belajar HTML, CSS, <br> JavaScript</p>
+    <h1></h1>
+    <h2>Heading 1</h2>
+    <h3>Heading 2</h3>
+    <h4>Heading 3</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+    <p>Style font <b>bold,</b> <i>italic,</i></p>
+    <p>Style font <sub>sub(di bawah)</sub> <sup>sup(di atas)</sup></p>
+    <h1>Bullet point</h1>
+    <ul type="disc">
+        <li>Item 1 <p>Deskripsi tanpa bullet point dengan p</p></li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+    <h1>Numbered list</h1>
+    <ol type="I">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+    </ol>
+
+    <h1>Table</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Nama</th>
+                <th>Umur</th>
+                <th>Alamat</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Alpha</td>
+                <td>18</td>
+                <td>Jakarta</td>
+            </tr>
+            <tr>
+                <td>Beta</td>
+                <td>19</td>
+                <td>Bandung</td>
+            </tr>
+            <tr>
+                <td>Gamma</td>
+                <td>20</td>
+                <td>Surabaya</td>
+            </tr>
+    </table>
+
+    <h1>Picture</h1>
+    <img 
+    src="images/PENS.png" 
+    alt="Logo PENS" 
+    height="200px"/>
+
+    <img 
+    src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
+    alt="Logo JavaScript"
+    height="200px"/>
+
+    <h1>Link</h1>
+    <p> Link menuju website <a href="https://online.mis.pens.ac.id" target="_blank">PENS</a></p>
+    <p> Link menuju <a href="./second.html">2nd HTML</a></p>
+    <p>Link menuju teks bawah dengan id Teks bawah dengan id <a href="#lompat">lompat</a></p>
+
+    <p id="lompat">Ini adalah teks dengan id lompat</p>
+
+    <h1>Form</h1>
+    <form action="https://example.com/submit" method="post">
+        <label for="name">Nama:</label>
+        <input type="text" id="name" name="name" required placeholder="Type your name here...">
+        <br>
+        <label for="umur">Umur:</label>
+        <input type="number" id="number" name="umur" min="1" max="100" required placeholder="Age">
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required placeholder="Type your password here...">
+        <br>
+        <label for="gender">Gender:</label>
+        <input type="radio" id="gender" name="gender" value="male">Men
+        <input type="radio" id="gender" name="gender" value="female">Women
+        <br>
+        <label for="ethnic">Ethnic:</label>
+        <select>
+            <option value="european">European</option>
+            <option value="american">American</option>
+            <option value="asian">Asian</option>
+            <option value="african">African</option>
+            <option value="indian">Indian</option>
+            <option value="other">Other</option>
+        </select>
+        <br>
+        <label for="comment">Comment:</label>
+        <br>
+        <textarea id="comment" name="comment" rows="4" cols="50" placeholder="Write your comment here..."></textarea>
+        <br>
+        <input type="checkbox" id="subscribe" name="subscribe" value="yes">I agree with terms and conditions
+        <br>
+        <input type="submit" value="Submit">
+</body>
+</html>
