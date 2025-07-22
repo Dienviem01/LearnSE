@@ -13,3 +13,16 @@ You can check the code in my day_1 folder.
 It's just a basic HTML file where we change the document title then print "Hello World."
 Then, we installed the live server extension (i forgot the exact name). With that extension, you can see the result live inside VS Code.
 Lastly, we went upload it to GitHub (They used the desktop version, while i used the web interface since i had tried it before).
+
+**2nd Day, July 22nd 2025**
+On the second day of the class, we focused on learning HTML elements, attributes, and basic styling — but still using only HTML (no separate CSS file yet).
+We practiced using a variety of HTML elements, including headings (h1 to h6), paragraphs, line breaks, bold and italic styles, superscript and subscript, unordered (ul) and ordered (ol) lists, and tables. 
+We also added images using the <img> tag and created links using the <a> tag — including external links, internal page links, and anchor links using id.
+Next, we learned about forms. We built a form with various input types: text fields, number input, password input, radio buttons for gender selection, 
+a dropdown (select) for ethnic groups, a comment box using textarea, and a checkbox for agreeing to terms. 
+We also learned how to use the action and method attributes in the <form> tag to simulate submitting data.
+Toward the end of the session, we were introduced to styling, not by using plain CSS, but directly using Tailwind CSS. 
+Instead of writing a separate .css file, we simply linked to Tailwind via CDN in the <head> section of our HTML file. 
+Then we applied utility classes (like text-3xl, text-blue-500, bg-black, font-bold, etc.) directly to our HTML elements to style them instantly.
+
+You can check my code and experiment result inside the day_2 folder.
