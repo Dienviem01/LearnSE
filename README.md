@@ -4,7 +4,7 @@ Hello, I am DNvm,
 In this repository, i recap everything that i have learned from RevoU Software Engineering class held from July 21st to 25th, 2025.
 I will write the recap and explain what i learned each day and push updates of my code in day_x folder
 
-**Day 1, July 21st 2025**
+**1st Day, July 21st 2025**
 This was the beginning of the class, 
 On the first day, RevoU is presented about HTML and GIT (especially github).
 They explained about how to write a code in Visual Studio Code using HTML and how to upload it to GitHub.
@@ -26,3 +26,7 @@ Instead of writing a separate .css file, we simply linked to Tailwind via CDN in
 Then we applied utility classes (like text-3xl, text-blue-500, bg-black, font-bold, etc.) directly to our HTML elements to style them instantly.
 
 You can check my code and experiment result inside the day_2 folder.
+
+In addition to the lesson, we also received an assignment consisting of 25 logic questions. Since I already have some basic experience in coding (though still at beginner level), I decided to work on them right away. Some of the questions involved simple mathematical logic, not too difficult, but it did require me to grab a piece of paper and scribble some workings by hand. The actual coding parts were fairly easy and straightforward.
+
+As for the mini project assignment, I plan to work on it and submit it on Saturday.
