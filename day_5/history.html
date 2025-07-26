@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>History</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 12px;
+            text-align: center; /* Ubah dari left ke center */
+            border-bottom: 1px solid #2c3e50;
+        }
+        th {
+            background-color: #232946;
+            color: #8ab4f8;
+        }
+        tr {
+            background-color: #1e1e2e;
+        }
+        tr:hover {
+            background-color: #2c5364;
+        }
+    </style>
+</head>
+
+<body class="min-h-screen bg-gradient-to-b from-[#0f2027] via-[#2c5364] to-[#1a1a2e]">
+    <!-- Tombol Back -->
+    <button onclick="window.location.href='main.html'" class="fixed top-4 left-4 z-50 flex items-center gap-1 px-3 py-1.5 bg-blue-700 hover:bg-blue-800 text-white rounded-lg shadow transition">
+        <span class="material-icons text-base">arrow_back</span>
+        Back
+    </button>
+    <!-- Tombol Clear History -->
+    <button onclick="clearHistory()" class="fixed top-4 right-4 z-50 flex items-center gap-1 px-3 py-1.5 bg-red-600 hover:bg-red-700 text-white rounded-lg shadow transition">
+        <span class="material-icons text-base">delete_sweep</span>
+        Clear History
+    </button>
+    <main class="max-w-2xl mx-auto pt-10 pb-24 px-4">
+        <h1 class="text-3xl font-bold text-center text-gray-100 mb-8 drop-shadow-lg">History</h1>
+        <div id="history-list" class="space-y-4"></div>
+    </main>
+    <script src="js/script.js"></script>
+    <script src="js/history.js"></script>
+</body>
+</html>

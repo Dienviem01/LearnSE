@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Project by DNvm </title>
+
+    <!-- Tailwind -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+
+<body class="min-h-screen bg-gradient-to-b from-[#0f2027] via-[#2c5364] to-[#1a1a2e]">
+    <!-- Tombol Back -->
+    <button onclick="window.location.href='main.html'" class="fixed top-4 left-4 z-50 flex items-center gap-1 px-3 py-1.5 bg-blue-700 hover:bg-blue-800 text-white rounded-lg shadow transition">
+        <span class="material-icons text-base">arrow_back</span>
+        Back
+    </button>
+
+   <main>
+    <header>
+        <h1 class="text-2xl font-semibold text-gray-100 text-center mt-8 mb-8 tracking-tight drop-shadow-lg">Add To Do</h1>
+    </header>
+    <div class="flex justify-center items-center min-h-[60vh]">
+        <form class="bg-[#232946]/90 shadow-2xl rounded-xl p-8 w-full max-w-md border border-blue-900">
+    <div>
+        <label for="todo-input" class="block mb-2 text-sm font-medium text-blue-100">
+            Add a new to do
+            <input type="text" id="todo-input" class="bg-[#121629] border border-blue-700 text-blue-100 text-sm rounded-lg focus:ring-blue-400 focus:border-blue-400 block w-full p-2.5 mt-1 placeholder:text-blue-300" placeholder="Enter your to do here..." required>    
+        </label>
+    </div>
+    <div>
+        <label for="begin-input" class="block mb-2 text-sm font-medium text-blue-100">
+            Begin date
+            <input 
+                type="date" 
+                id="begin-input" 
+                class="bg-[#121629] border border-blue-700 text-blue-100 text-sm rounded-lg focus:ring-blue-400 focus:border-blue-400 block w-full p-2.5 mt-1 placeholder:text-blue-300" 
+                placeholder="dd/mm/yyyy"
+                style="color-scheme: dark;"
+                required
+            >
+        </label>
+    </div>
+    <!-- Due Date -->
+    <div>
+        <label for="due-date-input" class="block mb-2 text-sm font-medium text-blue-100">
+            Due date
+            <input 
+                type="date" 
+                id="due-date-input" 
+                class="bg-[#121629] border border-blue-700 text-blue-100 text-sm rounded-lg focus:ring-blue-400 focus:border-blue-400 block w-full p-2.5 mt-1 placeholder:text-blue-300" 
+                placeholder="dd/mm/yyyy"
+                style="color-scheme: dark;"
+                required
+            >
+        </label>
+    </div>
+
+    <!-- Priority Level -->
+    <div>
+        <label for="priority-input" class="block mb-2 text-sm font-medium text-blue-100">
+            Priority level
+            <select id="priority-input" class="appearance-none bg-[#121629] border border-blue-700 text-blue-100 text-sm rounded-lg focus:ring-blue-400 focus:border-blue-400 block w-full p-2.5 mt-1 placeholder:text-blue-300 pr-8">
+                <option value="" disabled selected>Select priority</option>
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+                <option value="urgent">Urgent</option>
+                <option value="disaster">Disaster</option>
+            </select>
+        </label>
+    </div>
+    <!-- Genres -->
+    <div class="relative">
+        <label for="genre-input" class="block mb-2 text-sm font-medium text-blue-100">
+            Genre
+            <select id="genre-input" class="appearance-none bg-[#121629] border border-blue-700 text-blue-100 text-sm rounded-lg focus:ring-blue-400 focus:border-blue-400 block w-full p-2.5 mt-1 placeholder:text-blue-300 pr-8">
+                <option value="" disabled selected>Select genre</option>
+                <option value="academic">Academic</option>
+                <option value="non-academic">Non-Academic</option>
+                <option value="religion">Religion</option>
+                <option value="work">Work</option>
+                <option value="health">Health</option>
+                <option value="finance">Finance</option>
+                <option value="family">Family</option>
+                <option value="personal">Personal</option>
+                <option value="other">Other</option>
+            </select>
+        </label>
+    </div>
+    <!-- Tambahkan field deskripsi pada form -->
+<div>
+    <label for="desc-input" class="block mb-2 text-sm font-medium text-blue-100">
+        Description
+        <textarea id="desc-input" rows="3" class="bg-[#121629] border border-blue-700 text-blue-100 text-sm rounded-lg focus:ring-blue-400 focus:border-blue-400 block w-full p-2.5 mt-1 placeholder:text-blue-300" placeholder="Describe your task in detail..." required></textarea>
+    </label>
+</div>
+
+    <div class="mt-4 flex justify-between">
+        <button class="px-7 py-2 rounded-lg bg-gradient-to-r from-blue-600 via-indigo-700 to-purple-800 text-white font-semibold shadow-lg hover:from-blue-500 hover:to-purple-700 transition" type="submit">
+            Add
+        </button>
+        <button type="button" onclick="window.location.href='main.html'" class="flex items-center gap-2 px-4 py-2 bg-red-600 hover:bg-red-700 text-white rounded-lg shadow transition">
+            <span class="material-icons">cancel</span> Cancel
+        </button>
+    </div>
+    <script src="js/script.js"></script>
+    <script src="js/add.js"></script>
+</body>
+</html>
