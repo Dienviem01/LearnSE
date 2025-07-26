@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Untuk halaman main.html (list tabel)
+    // Untuk halaman index.html (list tabel)
     const list = document.getElementById('todo-list');
     if (list) {
         renderTodos();

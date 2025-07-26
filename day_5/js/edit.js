@@ -2,7 +2,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     const idx = localStorage.getItem('editIdx');
     const todos = JSON.parse(localStorage.getItem('todos') || '[]');
-    // Jika idx tidak ada atau tidak valid, balik ke main.html
+    // Jika idx tidak ada atau tidak valid, balik ke index.html
     if (idx === null || !todos[idx]) {
         return;
     }
@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // Simpan kembali ke localStorage
         localStorage.setItem('todos', JSON.stringify(todos));
         localStorage.removeItem('editIdx');
-        window.location.href = 'main.html';
+        window.location.href = 'index.html';
     });
 });
 // Fungsi buat edit task

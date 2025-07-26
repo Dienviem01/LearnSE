@@ -27,6 +27,6 @@ document.addEventListener('DOMContentLoaded', function() {
             const todos = JSON.parse(localStorage.getItem('todos') || '[]');
             todos.push({ todo, desc, begin, due, priority, genre });
             localStorage.setItem('todos', JSON.stringify(todos));
-            window.location.href = 'main.html';
+            window.location.href = 'index.html';
         });
     }});
