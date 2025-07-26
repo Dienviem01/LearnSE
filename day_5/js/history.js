@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
         renderHistory();
     }
 });
-
+// Fungsi buat hapus task dari tabel dan pindah ke history
 function deleteTask(idx) {
     const todos = JSON.parse(localStorage.getItem('todos') || '[]');
     const history = JSON.parse(localStorage.getItem('history') || '[]');
@@ -16,7 +16,7 @@ function deleteTask(idx) {
     localStorage.setItem('history', JSON.stringify(history));
     renderTodos();
 }
-
+// Fungsi buat nampilin history
 function renderHistory() {
     const history = JSON.parse(localStorage.getItem('history') || '[]');
     const list = document.getElementById('history-list');
@@ -25,6 +25,7 @@ function renderHistory() {
         list.innerHTML = '<div class="text-center text-blue-200">No history yet.</div>';
         return;
     }
+    // Nampilin tabel history
     let table = `
     <div class="overflow-x-auto">
     <table class="min-w-full text-blue-100 border-separate border-spacing-y-2 text-center">
@@ -40,6 +41,7 @@ function renderHistory() {
         </thead>
         <tbody>
     `;
+    // Nampilin setiap item di history
     history.forEach((item, idx) => {
         table += `
         <tr class="bg-[#232946]/90 border border-blue-900 rounded-xl shadow hover:bg-[#232946] cursor-pointer transition text-center" onclick="showHistoryDesc(${idx})">
@@ -63,7 +65,7 @@ function renderHistory() {
     `;
     list.innerHTML = table;
 }
-
+// Fungsi buat nampilin deskripsi dari history
 function showHistoryDesc(idx) {
     const history = JSON.parse(localStorage.getItem('history') || '[]');
     const item = history[idx];
@@ -89,10 +91,8 @@ function showHistoryDesc(idx) {
     `;
     document.body.appendChild(modal);
 }
-
+// Fungsi buat hapus semua history
 function clearHistory() {
-    if (confirm('Are you sure you want to clear all history?')) {
-        localStorage.removeItem('history');
-        renderHistory();
-    }
+    localStorage.removeItem('history');
+    renderHistory();
 }
